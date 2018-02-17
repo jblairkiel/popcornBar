@@ -1,0 +1,199 @@
+body{
+                margin:0px;
+        }
+
+
+        #bar{
+                box-shadow: 3px 3px gray;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                height: 50px;
+                min-width: 50px;
+                min-height: 50px;
+                width: 50px;
+                border-radius: 0px 5px 5px 0px;
+                background-color: #34495E;
+                opacity: 1;
+                transition: all 0.4s ease-out;
+                -ms-transition: all 0.4s ease-out;
+                -moz-transition: all .4s ease-out;
+                -webkit-transition: all 0.4s ease-out;
+        }
+
+        #bar.activeBar{
+                height: 100%;
+                width: 15%;
+                max-width: 200px;
+                min-width: 100px;
+                background-color: #212F3C;
+                border-radius: 0px 5px 0px 0px;
+                opacity: 1;
+                transition: all .4s ease-out;
+                -ms-transition: all 0.4s ease-out;
+                -moz-transition: all 0.4s ease-out;
+                -webkit-transition: all 0.4s ease-out;
+        }
+
+        #barContents{
+                opacity: 0;
+                transition: all 0.3s ease-out;
+                -ms-transition: all 0.3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -webkit-transition: all 0.3s ease-out;
+        }
+
+        #barContents ul{
+                list-style: none;
+                padding-left: 0%;
+        }
+
+ #barContents li{
+                list-style: none;
+                display: block;
+                padding-top: 5%;
+                text-align: center;
+                background-image: none;
+                background-repeat: none;
+                background-position: none;
+
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+
+        }
+
+        /* 1st level text*/
+        .barSubItem1 > a {
+                color: #AEB6BF;
+                display: block;
+                text-decoration: none;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                font-variant: normal !important:
+                font-weight: 500;
+                line-height: 26.4px;
+        }
+
+
+        /* 2nd level text*/
+        .barItem > a {
+                color: #AEB6BF;
+                display: block;
+                text-decoration: none;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                font-style: normal !important;
+                font-variant: normal;
+                font-weight: 500;
+                line-height: 26.4px;
+        }
+
+        .barSubItem {
+                display:none !important;
+                opacity: 0 !important;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+
+        }
+
+
+        .barSubItem li{
+                display:none !important;
+                opacity: 0 !important;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+
+        }
+
+        /* Level 1 Items */
+        .activeBarSubItem1{
+                display: block !important;
+                opacity: 1 !important;
+                border-bottom: 1px solid #8794b2;
+                background-color: #AEB6BF;
+                color: #8794B2;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 500;
+                line-height: 26.4px;
+
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+
+        .activeBarSubItem1 li{
+                display: block !important;
+                opacity: 1 !important;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+
+
+
+        /* Level 2 Items */
+        .activeBarSubItem2 {
+                display: block !important;
+                opacity: 1 !important;
+                border-bottom: 1px solid #8794b2;
+                background-color: #34495E;
+                color: #AEB6BF;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 500;
+                line-height: 26.4px;
+
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+
+        .activeBarSubItem2 li{
+                display: block !important;
+                opacity: 1 !important;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+
+
+        .noselect {
+          -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+             -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently
+                                          supported by Chrome and Opera */
+        }
+
+        /*affect contents*/
+        #bar.activeBar #barContents{
+                opacity: 1;
+                transition: all 0.8s ease-out;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+        #barIcon{
+
+                height: 50px;
+                width: 50px;
+                background-color: #34495E;
+                border-radius: 0px 5px 5px 0px;
+                opacity: 1;
+                cursor: pointer;
+                transition: all 0.8s ease-out;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all .8s ease-out;
+                -webkit-transition: all 0.8s ease-out;
+        }
+

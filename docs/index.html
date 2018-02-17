@@ -1,0 +1,41 @@
+<meta charset="utf-8"/>
+<script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="popcornBar.js" type="text/javascript"></script>
+<link href="popcornBar.css" type="text/css" rel="stylesheet">
+<script>
+	$(document).ready(function(){
+
+		$("#bar").popcornBar({
+		      "barStructure": [
+			  { "value":"Home", "name":"Home", "link":"#"},
+			  { 
+			    "value":"Projects",
+			    "name":"Projects",
+			    "subStructure":
+			    [
+				  {"value":"Project 1","name":"Project 1","link":"#"},
+				  {"value":"Project 2","name":"Project 2","link":"#"},
+				  {"value":"Project 2","name":"Project 3","link":"#"}
+			    ]
+			  },
+			  { "value":"Contact", "name":"Contact", "link":"#"}
+		      ],
+		      "barIcon": null
+		  });
+	
+	});
+
+</script>
+<html>
+	<header>
+		<div id="bar"></div>
+	</header>
+	<body>
+		<div style="margin-left:20%; margin-right: 5%;">
+			<h1>Lorem Ipsum</h1>	
+			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus sed lorem ut scelerisque. Maecenas eu mi ante. Phasellus at elit et dolor cursus consequat. Donec molestie lorem quis lectus viverra, sit amet dignissim turpis maximus. Sed eu justo tincidunt, suscipit enim in, rhoncus magna. Etiam semper tincidunt gravida. Aliquam tortor eros, dictum vitae nunc id, volutpat efficitur magna.
+
+Vestibulum eleifend sapien vel imperdiet placerat. Fusce at tortor quis nulla eleifend convallis. Nulla viverra sapien eu quam ornare convallis. Sed eu lacus sit amet lacus placerat gravida vitae scelerisque risus. Etiam posuere mi in turpis dignissim mattis. Donec finibus scelerisque semper. Morbi tempor quam ex, ut pellentesque est malesuada eget. Sed consequat mattis vestibulum. Ut hendrerit malesuada orci, sed imperdiet massa ullamcorper eu. Vestibulum suscipit neque at ex lobortis, vitae dignissim nulla pretium. Sed ac pharetra ligula. Quisque finibus bibendum nibh sit amet ornare. Nunc hendrerit, eros ac elementum ultricies, elit nisl feugiat ex, eu feugiat magna sapien ac lorem. Sed viverra tortor lacus, eget sollicitudin dolor tristique vel.
+		</div>
+	</body>
+</html>
