@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## popcornBar JQuery Plugin
 
-You can use the [editor on GitHub](https://github.com/jblairkiel/popcornBar/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+An elegant solution for web navigation.  The navigation pane stays out of the way until its is needed, allowing your users to view more of your site.  Clicking on the square in the top-right of the page will open and close the popup-pane.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Usage
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  $("#bar").popcornBar({
+      "barStructure": [
+          { "value":"Home", "name":"Home", "link":"."},
+          { 
+            "value":"Projects",
+            "name":"Projects",
+            "subStructure":
+            [
+                  {"value":"Project 1","name":"Project 1","link":"."},
+                  {"value":"Project 2","name":"Project 2","link":"."},
+                  {"value":"Project 2","name":"Project 3","link":"."}
+            ]
+          },
+          { "value":"Contact", "name":"Contact", "link":"."}
+      ],
+      "barIcon": null
+  });
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jblairkiel/popcornBar/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Future development is likely for this project.  Please submit any feature request or bugs as issues.
+
+Thanks!
+
+-Blair
