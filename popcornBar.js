@@ -195,7 +195,7 @@
 				return "<li id='" + name.replace(' ','') + "'" +
 					"class='barSubItem" + level.toString() + "'>" +
 					"<a class='noselect' >" + name + "</a>" +
-					"<ul id='barItem" + name.replace(' ','') +  "' class='barContents'>" +
+					"<ul style='display:none;' id='barItem" + name.replace(' ','') +  "' class='barContents'>" +
 					listItems +
 					"</ul>" +
 					"</li>";
